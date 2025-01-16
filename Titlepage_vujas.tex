@@ -1,0 +1,100 @@
+%*******************************************************
+% Titlepage
+%*******************************************************
+\begin{titlepage}
+	
+	% TikZ box around the text area
+	\begin{tikzpicture}[remember picture, overlay]
+		\draw[line width=1pt, lightgray]
+		($(current page.north west) + (1cm,-1cm)$) rectangle
+		($(current page.south east) + (-1cm,1cm)$);
+	\end{tikzpicture}
+	
+ 	\begin{tikzpicture}[remember picture, overlay]
+		% Coordinates and image
+		\node[anchor=north west] (kit logo) at ($(current page.north west) + (2cm, -1.8cm)$) {\includegraphics[width=4cm]{gfx/Uni_Logo.png}}; % Adjust coordinates and size
+	\end{tikzpicture}
+	
+    %\pdfbookmark[1]{\myTitle}{titlepage}
+    % if you want the titlepage to be centered, uncomment and fine-tune the line below (KOMA classes environment)
+    \begin{addmargin}[-1cm]{-3cm}
+    \begin{center}
+        %\large
+
+        \hfill
+
+        \vfill
+
+        \begingroup
+	        \color{CTtitle}
+	        \begin{minipage}{1\textwidth} % Adjust the width (e.g., 0.8 of the page width)
+	        	\centering % Center-align the title inside the minipage
+	        	\LARGE{\spacedallcaps{\myTitle}}
+	        \end{minipage}
+        \endgroup
+        
+        \vfill
+        \bigskip \bigskip \bigskip
+        \vfill 
+        
+        zur Erlangung des akademischen Grades eines \\
+        \medskip
+        \textbf{\Large{\spaced{Academic Title}}} \\
+        
+        \vfill
+        \bigskip \bigskip \bigskip
+        \vfill
+        
+        von der XXX-Fakultät für XXX des \\
+        Xavier Institute \\
+        genehmigte \\ 
+        
+        \vfill
+        \bigskip \bigskip \bigskip
+        \vfill
+
+		\textbf{\Large{\spaced{Dissertation von}}} \\
+		\medskip
+        \textbf{\Large{\spaced{\myName}}}
+        
+        \vfill
+        \bigskip \bigskip \bigskip
+        \vfill
+
+        \includegraphics[width=6cm]{gfx/TFZsuperellipse_bw} \\
+        
+        \vfill
+        \bigskip \bigskip \bigskip
+        \vfill
+
+        %\mySubtitle \\ \medskip
+        %\myDegree \\
+        %\myDepartment \\
+        %\myFaculty \\
+        %\myUni \\ \bigskip
+        
+        % - Here add Haupt and Korreferent
+		\begingroup
+		\centering % Ensure the content is centered
+		\makebox[\textwidth]{ % Ensures the entire tabular is horizontally centered
+			\begin{tabular}{l l} % Two left-aligned columns
+				\textbf{Tag der mündlichen Prüfung:} & DD. Month YYYY \\%[1em]
+				& \\
+				\textbf{Hauptreferent:} & \textbf{Magneto} \\
+				& Xavier Institute (Omega Level Thread) \\%[1em]
+				& \\
+				\textbf{Korreferent:} & \textbf{Prof.\ X}  \\
+				& Xavier Institute
+			\end{tabular}
+		}
+		\endgroup
+
+
+
+        %\myTime\ -- \myVersion
+
+        \vfill
+
+    \end{center}
+  \end{addmargin}
+\end{titlepage}
