@@ -1,8 +1,8 @@
-# Thesis_Template
+# Alternative classicthesis Template
 My variation of the - classicthesis - LaTeX template
 
 ## :octopus: What is the difference between this version and the classicthesis template?
-- Added lines numbers, only when using the draft mode - better for feedback with superviser IMO
+- Added line numbers, only when using the draft mode - better for feedback with superviser IMO
 - Equations are now always centered by default.
 - Captions are not indented anymore.
 - Changed the default font of numbers that are associated with sections, subsections, equations, figures and tables. This is better IMO as it's closer to the usual numbering font found in CS papers
