@@ -12,6 +12,7 @@ My variation of the - [classicthesis](https://bitbucket.org/amiede/workspace/pro
 ## :frog: Qualitative Results 
 Best vizualized side by side: TODO
 
+---
 > [!NOTE]
 > - All the credit goes to [André Miede](https://www.miede.de/) and [Ivo Pletikosić](http://ivo-pletikosic.from.hr/) for providing a beautiful template - Many thanks!
 > - Link to the [classicthesis template](https://bitbucket.org/amiede/workspace/projects/CT) project.
